@@ -1,0 +1,16 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto de NodeJS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://crvargasm@bitbucket.org/crvargasm/guia-hoteles.git"
+  },
+  "author": "Camilo Vargas",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/crvargasm/guia-hoteles#readme"
+}
