@@ -16,5 +16,10 @@
   "homepage": "https://bitbucket.org/crvargasm/guia-hoteles#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.3",
+    "bootstrap": "^5.1.0",
+    "jquery": "^3.6.0"
   }
 }
