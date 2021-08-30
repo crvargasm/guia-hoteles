@@ -3,6 +3,7 @@
 	background-color: #629DBD;
 	color: black;
 	padding: 40px;
+	margin-top: 50px;
 }
 
 footer{
@@ -21,9 +22,4 @@ footer{
 
 .btn-reserva {
 	width: 100%;
-}
-
-a{
-	text-decoration: none;
-	color: black;
 }
