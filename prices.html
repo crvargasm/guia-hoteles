@@ -45,88 +45,117 @@
         </ol>
       </nav>
 
-      <div class="table-responsive">
-        <table class="table table-striped">
-          <thead>
-            <tr class="table-dark"> 
-              <th>Calidad</th>
-              <th>Bogotá</th>
-              <th>Medellín</th>
-              <th>Bucarmanga</th>
-              <th>Cali</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <span class="oi oi-star"></span>
-              </td>
-              <td>$100.000</td>
-              <td>$230.000</td>
-              <td>$320.000</td>
-              <td>$120.000</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-              </td>
-              <td>$300.000</td>
-              <td>$430.000</td>
-              <td>$320.000</td>
-              <td>$620.000</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-              </td>
-              <td>$300.000</td>
-              <td>$730.000</td>
-              <td>$820.000</td>
-              <td>$420.000</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-              </td>
-              <td>$1.300.000</td>
-              <td>$1.2730.000</td>
-              <td>$1.120.000</td>
-              <td>$920.000</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-              </td>
-              <td>$2.300.000</td>
-              <td>$1.730.000</td>
-              <td>$2.820.000</td>
-              <td>$1.420.000</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="compara-tab" data-bs-toggle="tab" data-bs-target="#compara" type="button" role="tab" aria-controls="compara" aria-selected="true">Compara</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tarjetas-tab" data-bs-toggle="tab" data-bs-target="#tarjetas" type="button" role="tab" aria-controls="tarjetas" aria-selected="true">Tarjetas</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="comentarios-tab" data-bs-toggle="tab" data-bs-target="#comentarios" type="button" role="tab" aria-controls="comentarios" aria-selected="true">Comentarios</button>
+        </li>
+      </ul>
 
-      <div class="d-flex justify-content-center">
-        <div class="card" style="width: 18rem;">
-          <div class="card-header" style="background-color:blue; color: white;">
-            Tarjetas Aceptadas  
+      <div class="tab-content" id="myTabContent">
+
+        <div class="tap-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr class="table-dark"> 
+                  <th>Calidad</th>
+                  <th>Bogotá</th>
+                  <th>Medellín</th>
+                  <th>Bucarmanga</th>
+                  <th>Cali</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="oi oi-star"></span>
+                  </td>
+                  <td>$100.000</td>
+                  <td>$230.000</td>
+                  <td>$320.000</td>
+                  <td>$120.000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                  </td>
+                  <td>$300.000</td>
+                  <td>$430.000</td>
+                  <td>$320.000</td>
+                  <td>$620.000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                  </td>
+                  <td>$300.000</td>
+                  <td>$730.000</td>
+                  <td>$820.000</td>
+                  <td>$420.000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                  </td>
+                  <td>$1.300.000</td>
+                  <td>$1.2730.000</td>
+                  <td>$1.120.000</td>
+                  <td>$920.000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                  </td>
+                  <td>$2.300.000</td>
+                  <td>$1.730.000</td>
+                  <td>$2.820.000</td>
+                  <td>$1.420.000</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Tarjeta Básica</li>
-            <li class="list-group-item">Tarjeta VIP</li>
-            <li class="list-group-item">Tarjeta Black</li>
-          </ul>
+
         </div>
+
+        <div class="tap-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+
+          <div class="d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <div class="card-header" style="background-color:blue; color: white;">
+                Tarjetas Aceptadas  
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Tarjeta Básica</li>
+                <li class="list-group-item">Tarjeta VIP</li>
+                <li class="list-group-item">Tarjeta Black</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="tap-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+
+          Comentarios
+          
+        </div>
+
       </div>
 
     </div>
