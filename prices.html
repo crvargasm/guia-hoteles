@@ -43,23 +43,17 @@
           <li class="breadcrumb-item active" aria-current="page"><a class="text-muted text-decoration-none" href="./index.html">Home</a></li>
           <li class="breadcrumb-item active" aria-current="page">Precios</li>
         </ol>
+      </nav>    
+
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-compara-tab" data-bs-toggle="tab" data-bs-target="#nav-compara" type="button" role="tab" aria-controls="nav-compara" aria-selected="true">Compara</button>
+          <button class="nav-link" id="nav-tarjetas-tab" data-bs-toggle="tab" data-bs-target="#nav-tarjetas" type="button" role="tab" aria-controls="nav-tarjetas" aria-selected="false">Tarjetas</button>
+          <button class="nav-link" id="nav-comentarios-tab" data-bs-toggle="tab" data-bs-target="#nav-comentarios" type="button" role="tab" aria-controls="nav-comentarios" aria-selected="false">Comentarios</button>
+        </div>
       </nav>
-
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="compara-tab" data-bs-toggle="tab" data-bs-target="#compara" type="button" role="tab" aria-controls="compara" aria-selected="true">Compara</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="tarjetas-tab" data-bs-toggle="tab" data-bs-target="#tarjetas" type="button" role="tab" aria-controls="tarjetas" aria-selected="true">Tarjetas</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="comentarios-tab" data-bs-toggle="tab" data-bs-target="#comentarios" type="button" role="tab" aria-controls="comentarios" aria-selected="true">Comentarios</button>
-        </li>
-      </ul>
-
-      <div class="tab-content" id="myTabContent">
-
-        <div class="tap-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-compara" role="tabpanel" aria-labelledby="nav-compara-tab">
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
@@ -130,34 +124,54 @@
               </tbody>
             </table>
           </div>
-
         </div>
+        <div class="tab-pane fade" id="nav-tarjetas" role="tabpanel" aria-labelledby="nav-tarjetas-tab">
 
-        <div class="tap-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-
-          <div class="d-flex justify-content-center">
-            <div class="card" style="width: 18rem;">
-              <div class="card-header" style="background-color:blue; color: white;">
-                Tarjetas Aceptadas  
+          <div class="accordion" id="accordionTarjetas">
+            <div class="accordion-item">
+              <h5 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Tarjeta Básica
+                </button>
+              </h5>
+              <div class="accordion-collapse collapse" id="collapseOne" aria-labeledby="headingOne" data-bs-parent="#accordionTarjetas">
+                <div class="accordion-body">
+                  Se pueden reservar en 3 cuótas sin interés.
+                </div>
               </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Tarjeta Básica</li>
-                <li class="list-group-item">Tarjeta VIP</li>
-                <li class="list-group-item">Tarjeta Black</li>
-              </ul>
+            </div>
+
+            <div class="accordion-item">
+              <h5 class="accordion-header" id="headingTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  Tarjeta VIP
+                </button>
+              </h5>
+              <div class="accordion-collapse collapse" id="collapseTwo" aria-labeledby="headingTwo" data-bs-parent="#accordionTarjetas">
+                <div class="accordion-body">
+                  Se puede reservar en 6 cuótas sin interés. Al llegar, recibirás una canasta de obsequios para disfrutar con tu familia.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h5 class="accordion-header" id="headingThree">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  Tarjeta Black
+                </button>
+              </h5>
+              <div class="accordion-collapse collapse" id="collapseThree" aria-labeledby="headingThree" data-bs-parent="#accordionTarjetas">
+                <div class="accordion-body">
+                  Se puede reservar en 12 cuótas sin interés. Al llegar, recibirás una canasta de obsequios para disfrutar con tu familia y un acceso al gimnasio y spa todos los días de tus vacaciones.
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
-
-        <div class="tap-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
-
+        <div class="tab-pane fade" id="nav-comentarios" role="tabpanel" aria-labelledby="nav-comentarios-tab">
           Comentarios
-          
         </div>
-
       </div>
-
     </div>
 
     <footer>
