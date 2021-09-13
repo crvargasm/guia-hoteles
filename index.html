@@ -208,7 +208,7 @@
           
             <p class="card-text">El hotel dispone de un restaurante refinado de cocina italiana, un bar moderno, terraza de verano con vistas a la ciudad, zona de spa y gimnasio.</p>
 
-            <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto"> Contacto</button>
+            <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto" id="contactoBtn"> Contacto</button>
           </div>
           <div>
             <button type="button" class="btn btn-secondary btn-reserva" data-bs-toggle="popover" title="Promociones" data-bs-content="Consulta las promociones!"><span class="oi oi-plus"></span> Go To</button>
@@ -274,6 +274,26 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $('#contacto').on('shown.bs.modal', function (e){
+        console.log('El Modal contacto se está mostrando');
+      });
+      $('#contacto').on('show.bs.modal', function (e){
+        console.log('El Modal contacto se está mostrando');
+        $('#contactoBtn').removeClass('btn-outline-success');
+        $('#contactoBtn').addClass('btn-primary');
+        $('#contactoBtn').prop('disabled', true);
+      });
+      $('#contacto').on('hidden.bs.modal', function (e){
+        console.log('El Modal contacto se está mostrando');
+        $('#contactoBtn').prop('disabled', false);
+      });
+      $('#contacto').on('hide.bs.modal', function (e){
+        console.log('El Modal contacto se está mostrando');
+        $('#contactoBtn').removeClass('btn-primary');
+        $('#contactoBtn').addClass('btn-outline-success');
+      });
+    </script>
     <script>
       var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
       var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
