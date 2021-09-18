@@ -1,0 +1,42 @@
+$blue: #5ec4ff;
+$yellow: #f2ef1b;
+$green: #52fa66;
+$red: #fa6352;
+
+@mixin margenes($top, $bottom){
+	margin-top: $top;
+	margin-bottom: $bottom;
+}
+
+.jumbotron {
+	font-weight: bold;
+	background-color: $blue;
+	color: black;
+	padding: 40px;
+	@include margenes(50px, 0px);
+}
+
+footer{
+	color: black;
+	padding: 10px 10px 0 10px;
+	background-color: $blue;
+	@include margenes(10px, 0px);
+}
+
+.card-hotel{
+	flex: 1 200px;
+	@include margenes(10px, 0px);
+}
+
+.btn-reserva {
+	width: 100%;
+	border-radius: 0px;
+}
+
+.footer-address-icon{
+	padding-right: 10px;
+}
+
+.tab-content{
+	padding-top: 10px;
+}
